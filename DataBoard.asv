@@ -102,10 +102,7 @@ classdef DataBoard < handle
             obj.SNR = 0;
             obj.BER = inf;
             obj.SER = inf;
-            obj.QAM16_Map = [-3 + 3i, -1 + 3i, 1 + 3i, 3 + 3i, ...
-                     -3 + 1i, -1 + 1i, 1 + 1i, 3 + 1i, ...
-                     -3 - 1i, -1 - 1i, 1 - 1i, 3 - 1i, ...
-                     -3 - 3i, -1 - 3i, 1 - 3i, 3 - 3i]; 
+            
         end
         function set.SNR(obj, val)
             obj.SNR = val;
