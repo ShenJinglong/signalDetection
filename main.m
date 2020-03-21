@@ -7,7 +7,7 @@ sender = Sender(data_board); % 发射机
 info_channel = InfoChannel(data_board); % 信道
 receiver = Receiver(data_board); % 接收机
 
-for modulation_type = ["16QAM-cy", "16QAM"]
+for modulation_type = ["16QAM-cy"]
     data_board.reset(); % 重置数据管理器
     data_board.modulationType = modulation_type;
     while data_board.BER > 1e-5
